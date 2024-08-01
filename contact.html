@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0 ">
+    <title>University Website Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+</head>
+
+<body>
+    <section class="sub-header">
+
+    <nav>
+        <a href="index.html"><img src=logo.png> </a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-window-close" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="course.html">COURSE</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+
+            </ul>
+
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+
+    </nav>
+   <h1>Contact Us</h1>
+
+</section>
+
+
+
+<!---Contact Us-->
+<section class="location">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28075.540649867955!2d77.8351513182754!3d28.405899450477232!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ca6b2622913b1%3A0x911a6113e90ec604!2sBulandshahr%2C%20Uttar%20Pradesh%20203001!5e0!3m2!1sen!2sin!4v1686053425952!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+
+<section class="contact-us">
+    <div class="row">
+<div class="contact-col">
+    
+<div>
+    <i class="fa fa-home"></i>
+    <span><h5>XYZ Road, ABC Complex</h5>
+    <p>Bulandshahr, UttarPradesh, IN</p></span>
+</div>
+<div>
+    <i class="fa fa-phone"></i>
+    <span><h5>+91 97012-XXXXX</h5>
+    <p>Weekdays Available, Timings - 10AM to 6PM </p></span>
+</div>
+
+<div>
+    <i class="fa fa-home"></i>
+    <span><h5>info@gmail.com</h5>
+    <p>Email For Any Feedback</p></span>
+</div>
+
+
+</div>
+<div class="contact-col">
+<form action="formhandler.php" method="post">
+    <input type="text" name="name" placeholder="Enter Your Name" required>
+    <input type="email" name="email" placeholder="Enter Your Email" required>
+    <input type="text" name="subject" placeholder="Enter Your Subject" required>
+    <textarea  rows="8" name="message" placeholder="Message" required></textarea>
+    <button type="submit" class="hero-btn red-btn">Send Message</button>
+</form>
+    
+</div>
+</div>
+</section>
+
+
+
+
+
+
+<!---FOOTER-->
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque accusantium hic, molestiae nobis debitis aspernatur <br>eaque molestias quidem recusandae enim eveniet facilis aut eligendi magni? Expedita dolores at cum dolorem porro corrupti architecto ex magnam.</p>
+
+ <div class="icons">
+    <i class="fa fa-facebook"></i>
+    <i class="fa fa-twitter"></i>
+    <i class="fa fa-whatsap"></i>
+    <i class="fa fa-instagram"></i>
+    <i class="fa fa-linkdin"></i>
+ </div>
+
+
+ <p>Made By Ashish</p>
+</section>
+
+
+
+
+
+<!---javascript for toggle menu--->
+
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+    navLinks.style.right = "0";
+    }
+    function hideMenu(){
+    navLinks.style.right = "-200px";
+    }
+</script>
+
+
+</body>
+
+</html>
